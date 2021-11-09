@@ -1,0 +1,55 @@
+===================================== test session starts =====================================
+platform linux -- Python 3.7.4, pytest-4.5.0, py-1.8.0, pluggy-0.12.0
+rootdir: /home/jtprince/dev/python-common
+plugins: mock-1.10.4, cov-2.5.1, asyncio-0.10.0
+collected 100 items                                                                           
+
+tests/test_config.py ............
+tests/test_config_utils.py .........
+tests/test_datetime_utils.py .............................................
+tests/test_enumerable.py ...
+tests/test_html.py ...
+tests/test_import_utils.py ..
+tests/test_json.py .
+tests/test_logging_utils.py ....
+tests/test_picklers.py ....
+tests/test_strings.py .
+tests/ci_cd/test_pytest_coverage_runner.py {'coverage': {'number_statements': 461, 'number_missed': 57, 'reported_percent': 88}, 'tests': {'number_run': 99, 'number_passed': 99, 'number_failed': 0, 'seconds': 2.69}}
+.F
+tests/commandline/test_verbose_argument_parser.py ..
+tests/json/test_io.py ......
+tests/licenses/test_tasks.py ..
+tests/xml/test_simple_parser.py ....
+
+========================================== FAILURES ===========================================
+/home/jtprince/dev/python-common/tests/ci_cd/test_pytest_coverage_runner.py:36: assert 1 == 2
+
+----------- coverage: platform linux, python 3.7.4-final-0 -----------
+Name                                            Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------
+common/__init__.py                                  0      0   100%
+common/ci_cd/pytest_coverage_runner.py             39      4    90%   78-81
+common/commandline/__init__.py                      0      0   100%
+common/commandline/verbose_argument_parser.py      19      0   100%
+common/config.py                                   97     23    76%   18-19, 22-27, 30, 146-148, 176-180, 233-235, 276, 280, 287
+common/config_utils.py                             42      1    98%   131
+common/datetime_utils.py                           30      0   100%
+common/enumerable.py                               17      0   100%
+common/html.py                                     25      0   100%
+common/import_utils.py                             44      3    93%   52, 66, 93
+common/json/__init__.py                             8      0   100%
+common/json/codecs.py                               6      6     0%   2-9
+common/json/io.py                                  23      0   100%
+common/licenses/__init__.py                         0      0   100%
+common/licenses/constants.py                        3      0   100%
+common/licenses/tasks.py                           24      1    96%   26
+common/logging_utils.py                            12      1    92%   56
+common/path_utils.py                                8      0   100%
+common/picklers.py                                 41      3    93%   20-21, 24
+common/strings.py                                   4      0   100%
+common/xml/__init__.py                              0      0   100%
+common/xml/simple_parser.py                        26      0   100%
+-----------------------------------------------------------------------------
+TOTAL                                             468     42    91%
+
+============================= 1 failed, 99 passed in 2.74 seconds =============================

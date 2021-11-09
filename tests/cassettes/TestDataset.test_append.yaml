@@ -1,0 +1,172 @@
+interactions:
+- request:
+    body: '{"fields": {"num_orders": {"name": "num_orders", "type": "number", "required":
+      true}, "timestamp": {"name": "timestamp", "type": "datetime", "required": false},
+      "tpl": {"name": "tpl", "type": "string", "required": false}}, "unique_by": ["timestamp"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '250'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: PUT
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{"id":"john.test.dataset","fields":{"num_orders":{"type":"number","optional":false,"name":"num_orders"},"timestamp":{"type":"datetime","optional":false,"name":"timestamp"},"tpl":{"type":"string","optional":false,"name":"tpl"}},"unique_by":["timestamp"],"created_at":"2020-07-12T00:53:25.072154Z","updated_at":"2020-07-12T00:53:25.072154Z"}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '340'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:25 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-03481d29ed59a7fd4
+      X-Request-Id:
+      - db598f8a-a39b-48f5-95c8-a1cae30e5da1
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"data": [{"num_orders": 8, "timestamp": "2020-01-02T00:00:00", "tpl":
+      "mytpl"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: POST
+    uri: https://api.geckoboard.com/datasets/john.test.dataset/data
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:25 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-07b2a3d3da628cc7e
+      X-Request-Id:
+      - 68a21469-9177-494b-9d83-30f0441cd786
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"data": [{"num_orders": 7, "timestamp": "2020-01-03T00:00:00", "tpl":
+      "mytpl"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: POST
+    uri: https://api.geckoboard.com/datasets/john.test.dataset/data
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:25 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0f719ae404d70469b
+      X-Request-Id:
+      - 1a09fb7d-9de9-4bfa-975c-50aff2e68dc7
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: DELETE
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:26 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0f719ae404d70469b
+      X-Request-Id:
+      - b7540b2f-596d-4ef8-b231-79a55dd56374
+    status:
+      code: 200
+      message: OK
+version: 1

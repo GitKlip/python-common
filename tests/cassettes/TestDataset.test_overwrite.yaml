@@ -1,0 +1,129 @@
+interactions:
+- request:
+    body: '{"fields": {"num_orders": {"name": "num_orders", "type": "number", "required":
+      true}, "timestamp": {"name": "timestamp", "type": "datetime", "required": false},
+      "tpl": {"name": "tpl", "type": "string", "required": false}}, "unique_by": ["timestamp"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '250'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: PUT
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{"id":"john.test.dataset","fields":{"num_orders":{"type":"number","optional":false,"name":"num_orders"},"timestamp":{"type":"datetime","optional":false,"name":"timestamp"},"tpl":{"type":"string","optional":false,"name":"tpl"}},"unique_by":["timestamp"],"created_at":"2020-07-12T00:53:24.028313Z","updated_at":"2020-07-12T00:53:24.028313Z"}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '340'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:24 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0e179ea4050e93cd4
+      X-Request-Id:
+      - 0538ade4-1521-4fcd-a019-2548ead7ba19
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"data": [{"num_orders": 8, "timestamp": "2020-01-02T00:00:00", "tpl":
+      "mytpl"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: PUT
+    uri: https://api.geckoboard.com/datasets/john.test.dataset/data
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:24 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0e179ea4050e93cd4
+      X-Request-Id:
+      - 199b9040-380e-4cd3-b0fd-4ca451cbbed9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: DELETE
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:24 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-03481d29ed59a7fd4
+      X-Request-Id:
+      - f30e2acd-b53f-4ef1-b6ce-8b318d394c0e
+    status:
+      code: 200
+      message: OK
+version: 1

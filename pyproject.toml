@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "common"
+version = "0.1.0"
+description = "Commonly used python code for 3plcentral"
+authors = ["John T. Prince <jprince@3plcentral.com>", "Erik Cornelsen <ecornelsen@3plcentral.com>", "Cody Holdaway <choldaway@3plcentral.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.7"
+pytz = "^2019.2"
+pyjwt = "^1.7.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "~4.5"
+pytest-cov = "=2.5.1"
+pytest-watch = "^4.2"
+pytest-asyncio = "^0.10.0"
+ipython = "^7.7"
+ipdb = "^0.12.2"
+pytest-mock = "^1.10"
+pip-licenses = "^1.15"
+invoke = "^1.3"
+flake8 = "^3.7"
+pylint = "^2.3"
+isort = "^4.3"
+toml = "^0.10.0"
+tabulate = "^0.8.6"
+requests = "^2.22.0"
+pyyaml = "^5.3.1"
+pytest-vcr = "^1.0.2"
+
+[tool.black]
+line-length = 120
+target-version = ['py37']
+include = '\.pyi?$'
+
+# see https://github.com/python/black#configuration-format
+exclude = '(/( \.eggs | \.git | \.hg | \.mypy_cache | \.tox | \.venv | _build | buck-out | build | dist)/)'
+
+[tool.isort]
+line_length = 120
+force_single_line = true
+
+[build-system]
+requires = ["poetry >= 0.12.16"]
+build-backend = "poetry.masonry.api"

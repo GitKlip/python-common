@@ -1,0 +1,21 @@
+image: "python:3.7"
+
+variables:
+  COVERAGE_UNDER_FAIL: 90
+
+before_script:
+  # - apt-get update -qq && apt-get install -y -qq sqlite3 libsqlite3-dev nodejs
+  - apt-get update -qq
+  - python -v
+  - which python
+  - pip install poetry
+  - poetry install
+
+test_and_lint:
+  # This breaks! "Could not retrieve the pipeline status..."
+  # only:
+  #   - master
+  tags:
+    - bastion-runner
+  script:
+    - poetry run python ci-test-runner.py ${COVERAGE_UNDER_FAIL}

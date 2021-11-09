@@ -1,0 +1,171 @@
+interactions:
+- request:
+    body: '{"fields": {"num_orders": {"name": "num_orders", "type": "number", "required":
+      true}, "timestamp": {"name": "timestamp", "type": "datetime", "required": false},
+      "tpl": {"name": "tpl", "type": "string", "required": false}}, "unique_by": ["timestamp"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '250'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: PUT
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{"id":"john.test.dataset","fields":{"num_orders":{"type":"number","optional":false,"name":"num_orders"},"timestamp":{"type":"datetime","optional":false,"name":"timestamp"},"tpl":{"type":"string","optional":false,"name":"tpl"}},"unique_by":["timestamp"],"created_at":"2020-07-12T00:53:26.957666Z","updated_at":"2020-07-12T00:53:26.957666Z"}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '340'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:27 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-004d9cb7f3cc805a0
+      X-Request-Id:
+      - 5c7d647c-b311-4885-bf28-6d75372d1107
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"data": [{"num_orders": 8, "timestamp": "2020-01-02T00:00:00", "tpl":
+      "mytpl"}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '81'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: POST
+    uri: https://api.geckoboard.com/datasets/john.test.dataset/data
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:29 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-004d9cb7f3cc805a0
+      X-Request-Id:
+      - a8e64553-8465-449e-91f0-00a4a9310c98
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"data": []}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: PUT
+    uri: https://api.geckoboard.com/datasets/john.test.dataset/data
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:30 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0f719ae404d70469b
+      X-Request-Id:
+      - 04ad9205-a673-469d-aeba-593a20f77e9e
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: DELETE
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:47 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0f719ae404d70469b
+      X-Request-Id:
+      - 910d2947-2879-45b1-96b9-932c76795e9d
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,94 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: GET
+    uri: https://api.geckoboard.com/datasets
+  response:
+    body:
+      string: '{"data":[{"id":"num_unsynced_objects.by_datetime","fields":{"datetime":{"type":"datetime","optional":false,"name":"datetime"},"facilities":{"type":"number","optional":true,"name":"Facility"},"inventory_details":{"type":"number","optional":true,"name":"InventoryDetail"},"inventory_owners":{"type":"number","optional":true,"name":"InventoryOwner"},"items":{"type":"number","optional":true,"name":"Item"},"locations":{"type":"number","optional":true,"name":"Location"},"orders":{"type":"number","optional":true,"name":"Orders"},"receivers":{"type":"number","optional":true,"name":"Receiver"},"tpl_id":{"type":"number","optional":false,"name":"Tpl"}},"unique_by":["datetime"],"created_at":"2020-07-10T08:12:23.950807Z","updated_at":"2020-07-10T09:53:26.038308Z"},{"id":"nps.by_period","fields":{"last30nps":{"type":"number","optional":false,"name":"Last30NPS"},"last7nps":{"type":"number","optional":false,"name":"Last7NPS"},"last90nps":{"type":"number","optional":false,"name":"Last90NPS"},"mtdnps":{"type":"number","optional":false,"name":"MTDNPS"},"previousnps":{"type":"number","optional":false,"name":"PreviousNPS"},"qtdnps":{"type":"number","optional":false,"name":"QTDNPS"},"todaycount":{"type":"number","optional":false,"name":"Today"},"todaynps":{"type":"number","optional":false,"name":"TodayNPS"},"updatedat":{"type":"datetime","optional":false,"name":"Updated"},"ytdnps":{"type":"number","optional":false,"name":"YTDNPS"}},"created_at":"2020-03-20T09:19:42.914769Z","updated_at":"2020-07-12T00:50:04.157365Z"},{"id":"team.bms.analytics","fields":{"churn":{"type":"number","optional":false},"churnpercent":{"type":"number","optional":false},"haloc":{"type":"number","optional":false},"helpothers":{"type":"number","optional":false},"legacyrefactor":{"type":"number","optional":false},"newwork":{"type":"number","optional":false},"totalcommits":{"type":"number","optional":false},"tt100":{"type":"number","optional":false},"wrongmessage":{"type":"string","optional":false}},"created_at":"2020-01-30T00:34:37.192664Z","updated_at":"2020-01-30T00:57:51.853161Z"},{"id":"sales.by_day","fields":{"amount":{"type":"number","optional":false,"name":"Amount"},"timestamp":{"type":"datetime","optional":false,"name":"Date"}},"unique_by":["timestamp"],"created_at":"2020-01-29T18:54:35.578634Z","updated_at":"2020-01-29T18:58:26.67903Z"},{"id":"logins.by_day_final","fields":{"cv":{"type":"number","optional":false,"name":"ClassicView
+        Logins (Unique)"},"day":{"type":"date","optional":false,"name":"Date"},"percent":{"type":"number","optional":false,"name":"Ratio"},"sv":{"type":"number","optional":false,"name":"SmartView
+        Logins (Unique)"}},"created_at":"2019-05-03T21:49:50.27265Z","updated_at":"2020-07-11T08:00:50.331733Z"},{"id":"logins.by_day_versionss","fields":{"cv":{"type":"number","optional":false,"name":"ClassicView
+        Logins (Unique)"},"day":{"type":"number","optional":false,"name":"Date"},"percent":{"type":"number","optional":false,"name":"Ratio"},"sv":{"type":"number","optional":false,"name":"SmartView
+        Logins (Unique)"}},"created_at":"2019-04-22T17:54:33.266406Z","updated_at":"2019-05-03T17:24:54.319995Z"},{"id":"logins.by_day_versions","fields":{"cv":{"type":"number","optional":false,"name":"Number
+        of unique logins for Classic View"},"day":{"type":"number","optional":false,"name":"Day
+        of the month"},"percent":{"type":"number","optional":false,"name":"Percentage
+        of total logins that are to Smart View"},"sv":{"type":"number","optional":false,"name":"Number
+        of unique logins for Smart View"}},"created_at":"2019-04-19T23:04:46.892002Z","updated_at":"2019-04-19T23:07:50.952458Z"},{"id":"logins.by_day_version","fields":{"cv":{"type":"number","optional":false,"name":"Number
+        of unique logins"},"day":{"type":"number","optional":false,"name":"Day of
+        the month"},"percent":{"type":"number","optional":false,"name":"percentage"},"sv":{"type":"number","optional":false,"name":"Number
+        of unique logins"}},"created_at":"2019-04-19T22:54:39.092458Z","updated_at":"2019-04-19T22:54:39.422358Z"},{"id":"logins.by_day","fields":{"day":{"type":"string","optional":false,"name":"Day
+        of the month"},"logins":{"type":"number","optional":false,"name":"Number of
+        unique logins"},"version":{"type":"string","optional":false,"name":"Which
+        version they are on"}},"created_at":"2019-04-17T21:33:43.340362Z","updated_at":"2019-04-17T21:36:33.748623Z"},{"id":"dataset.garrick_handler_ordertransportput_by_clone","fields":{"clondid":{"type":"string","optional":false,"name":"clondId"},"creationdate":{"type":"datetime","optional":false,"name":"CreationDate"},"handler":{"type":"string","optional":false,"name":"Handler"},"runinminutes":{"type":"number","optional":false,"name":"RunInMinutes"}},"created_at":"2019-01-10T19:26:12.419219Z","updated_at":"2020-07-12T00:51:33.596537Z"},{"id":"dataset.garrick_handler_ordertransportget_by_clone","fields":{"clondid":{"type":"string","optional":false,"name":"clondId"},"creationdate":{"type":"datetime","optional":false,"name":"CreationDate"},"handler":{"type":"string","optional":false,"name":"Handler"},"runinminutes":{"type":"number","optional":false,"name":"RunInMinutes"}},"created_at":"2019-01-09T19:08:05.684096Z","updated_at":"2020-07-12T00:51:31.199277Z"},{"id":"dataset.garrick_handler_ordertransportget","fields":{"clondid":{"type":"number","optional":false,"name":"clondId"},"creationdate":{"type":"datetime","optional":false,"name":"CreationDate"},"handler":{"type":"string","optional":false,"name":"Handler"},"runinminutes":{"type":"number","optional":false,"name":"RunInMinutes"}},"created_at":"2019-01-09T19:06:31.205469Z","updated_at":"2019-01-09T19:07:38.640693Z"}]}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:22 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      X-Instance-ID:
+      - i-0e179ea4050e93cd4
+      X-Request-Id:
+      - 18f6463c-d698-4d62-8819-d950f56131d5
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: DELETE
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{"error":{"message":"Dataset not found"}}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '42'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:23 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-03481d29ed59a7fd4
+      X-Request-Id:
+      - 2b6d8f6f-0821-4bf6-99ba-7ca2eb1edc5b
+    status:
+      code: 404
+      message: Not Found
+version: 1

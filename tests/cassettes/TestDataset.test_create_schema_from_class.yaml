@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: '{"fields": {"num_orders": {"name": "num_orders", "type": "number", "required":
+      true}, "timestamp": {"name": "timestamp", "type": "datetime", "required": false},
+      "tpl": {"name": "tpl", "type": "string", "required": false}}, "unique_by": ["timestamp"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '250'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: PUT
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{"id":"john.test.dataset","fields":{"num_orders":{"type":"number","optional":false,"name":"num_orders"},"timestamp":{"type":"datetime","optional":false,"name":"timestamp"},"tpl":{"type":"string","optional":false,"name":"tpl"}},"unique_by":["timestamp"],"created_at":"2020-07-12T00:53:18.703866Z","updated_at":"2020-07-12T00:53:18.703866Z"}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '340'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:18 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-0f719ae404d70469b
+      X-Request-Id:
+      - 0e064ea3-cdfa-4f26-be45-4b2795dd94aa
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.23.0
+      authorization:
+      - DUMMY
+    method: DELETE
+    uri: https://api.geckoboard.com/datasets/john.test.dataset
+  response:
+    body:
+      string: '{}
+
+        '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 12 Jul 2020 00:53:20 GMT
+      Server:
+      - nginx
+      X-Instance-ID:
+      - i-090f743bf9c3eca3a
+      X-Request-Id:
+      - 7d52d5d1-f3dc-45f7-b7e4-21751d011d9a
+    status:
+      code: 200
+      message: OK
+version: 1

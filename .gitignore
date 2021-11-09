@@ -1,0 +1,27 @@
+.idea/
+# ARCHIVE/
+
+.ipynb_checkpoints
+.coverage
+
+build
+dist
+
+# files created by faust to store data
+*.log
+*.sst
+*.db
+IDENTITY
+LOCK
+LOG*
+MANIFEST*
+OPTIONS*
+
+
+__pycache__/
+.pytest_cache/
+
+.vscode/
+
+*.tgz
+.vim
